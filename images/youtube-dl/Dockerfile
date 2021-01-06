@@ -1,4 +1,5 @@
 FROM myfirst:latest
+WORKDIR /mydir
 RUN apt update && apt install -y curl python
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
 RUN chmod a+x /usr/local/bin/youtube-dl 

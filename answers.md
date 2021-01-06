@@ -127,3 +127,32 @@ See 1-14/Dockerfile
 
 ## 1-15
 https://hub.docker.com/repository/docker/davidjoliver86/node-chuck
+
+# Part 2
+
+## 2-1
+See 2-1/docker-compose.yml
+
+## 2-2
+See 2-2/docker-compose.yml
+
+## 2-3
+See 2-3/docker-compose.yml
+
+## 2-4
+As long as `compute` was scaled to at least two instances, I was able to successfully complete this.
+```
+docker-compose up -d --scale compute=2
+```
+
+## 2-5
+See 2-5/docker-compose.yml
+
+## 2-6
+See 2-6/docker-compose.yml
+
+## 2-7
+See 2-7/docker-compose.yml
+
+## 2-8, 2-9, 2-10
+See 2-8/docker-compose.yml
