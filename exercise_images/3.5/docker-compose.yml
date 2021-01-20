@@ -3,7 +3,7 @@ version: '3.5'
 services:
 
   frontend:
-    image: frontend
+    image: frontend:alpine
     environment:
       - API_URL=http://localhost:80/api
     networks:
@@ -11,7 +11,7 @@ services:
     container_name: frontend
 
   backend:
-    image: backend
+    image: backend:alpine
     environment:
       - REDIS=redis
       - DB_HOST=db

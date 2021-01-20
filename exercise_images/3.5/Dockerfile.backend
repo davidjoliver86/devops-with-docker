@@ -1,0 +1,17 @@
+FROM node:10-alpine
+
+COPY package*.json /app/
+
+WORKDIR /app
+
+# Install node
+RUN npm install && \
+    adduser -D app && \
+    /bin/chown -R app:app /app
+
+# Copy app to container and start server
+
+USER app
+COPY . /app
+EXPOSE 8000
+CMD ["npm", "start"]

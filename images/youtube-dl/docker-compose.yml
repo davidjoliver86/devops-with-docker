@@ -5,5 +5,5 @@ services:
     image: davidjoliver86/youtube-dl
     build: .
     volumes:
-      - .:/mydir
+      - .:/app
     container_name: youtube-dl
